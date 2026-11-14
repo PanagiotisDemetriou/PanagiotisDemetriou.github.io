@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panayiotis Demetriou — 3D Computer Vision</title>
+<meta name="description" content="Panayiotis Demetriou — MSc Computer Graphics, Vision and Imaging at UCL. Research in 3D reconstruction and multimodal 3D scene understanding.">
+<meta property="og:title" content="Panayiotis Demetriou — 3D Computer Vision">
+<meta property="og:description" content="MSc student at UCL working on 3D reconstruction and multimodal 3D scene understanding.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="mono-logo" aria-label="Home">PD</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Panayiotis_Demetriou_CV.pdf" class="btn btn-sm" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow reveal">MSc Computer Graphics, Vision &amp; Imaging · UCL</p>
+      <h1 class="reveal">Panayiotis<br><em>Demetriou</em></h1>
+      <p class="lede reveal">I work on 3D computer vision: teaching models to reconstruct the world from images and to reason about the spaces we live in.</p>
+      <div class="hero-cta reveal">
+        <a href="assets/Panayiotis_Demetriou_CV.pdf" class="btn" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
+        <a href="mailto:dempan4@gmail.com" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="socials reveal">
+        <a href="https://github.com/PanagiotisDemetriou" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/panayiotis-demetriou" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:dempan4@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <canvas id="cloud" aria-label="Rotating 3D point cloud of a building" role="img"></canvas>
+      <p class="caption mono">point cloud · drag to rotate</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <dl class="stats reveal">
+      <div><dt>2nd</dt><dd>in graduating class, BSc Computer Science (GPA 9.46/10)</dd></div>
+      <div><dt>2×</dt><dd>research internships, CYENS Visual Computing Group</dd></div>
+      <div><dt>Top 5</dt><dd>nationally in the Pancyprian Exams, 1st in Computer Science</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap split">
+    <h2 class="section-label reveal"><span class="num">01</span> About</h2>
+    <div class="prose reveal">
+      <p>I'm a Computer Science graduate from the University of Cyprus, now studying for an MSc in Computer Graphics, Vision and Imaging at University College London.</p>
+      <p>My research sits where geometry meets learning. At the <strong>CYENS Centre of Excellence</strong> I've worked on feed-forward 3D reconstruction with VGGT and on situated question answering in 3D indoor scenes. Before that, I built tools for cyber-threat intelligence at <strong>KIOS</strong> and did IT audit work at <strong>PwC Cyprus</strong>, which taught me how to work with clients and real-world constraints.</p>
+      <p>I'm interested in computer vision, computer graphics and embodied AI: systems that can see a space, rebuild it, and answer questions about it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section" id="research">
+  <div class="wrap">
+    <h2 class="section-label reveal"><span class="num">02</span> Selected research</h2>
+
+    <!-- Project 1 -->
+    <article class="project reveal">
+      <div class="project-head">
+        <p class="meta mono">Summer 2026 · CYENS Visual Computing Group</p>
+        <h3>Image-Based 3D Reconstruction of Building Models</h3>
+        <p class="supervisors">Supervised by Dr. Melinos Averkiou and Dr. Marios Loizou</p>
+      </div>
+
+      <div class="project-body">
+        <div class="project-text">
+          <p>Can a single feed-forward network rebuild a whole building from a handful of photos? I applied <strong>VGGT</strong> (Visual Geometry Grounded Transformer) and its successor <strong>VGGT-Ω</strong>, which predict camera parameters, depth maps, point maps and point tracks in one pass, to architectural 3D reconstruction.</p>
+          <ul class="ticks">
+            <li>Prepared the <strong>BuildingNet</strong> dataset (1,850 models across religious, commercial, public and residential buildings) and rendered multi-view image sets as reconstruction input.</li>
+            <li>Aligned each predicted reconstruction to a common reference frame so it could be compared with the ground-truth geometry.</li>
+            <li>Benchmarked VGGT against VGGT-Ω on accuracy, completeness and overall reconstruction quality.</li>
+          </ul>
+          <div class="tags"><span>VGGT</span><span>Multi-view geometry</span><span>Point maps</span><span>PyTorch</span><span>Blender</span></div>
+        </div>
+
+        <div class="project-visual">
+          <figure class="pipeline">
+            <div class="pipe-col">
+              <span class="pipe-label mono">Input · multi-view renderings</span>
+              <div class="views">
+                <img src="assets/img/bldg-view-1.webp" alt="Rendered view of a building" loading="lazy">
+                <img src="assets/img/bldg-view-2.webp" alt="Rendered view of a building" loading="lazy">
+                <img src="assets/img/bldg-view-3.webp" alt="Rendered view of a building" loading="lazy">
+                <img src="assets/img/bldg-view-4.webp" alt="Rendered view of a building" loading="lazy">
+              </div>
+            </div>
+            <div class="pipe-arrow" aria-hidden="true"><span class="mono">VGGT</span>→</div>
+            <div class="pipe-col">
+              <span class="pipe-label mono">Output · 3D geometry</span>
+              <div class="views single"><img src="assets/img/house-2.webp" alt="Reconstructed 3D building model" loading="lazy"></div>
+            </div>
+          </figure>
+
+          <div class="table-wrap">
+            <table>
+              <caption class="mono">Reconstruction error on BuildingNet · lower is better</caption>
+              <thead><tr><th>Model</th><th>Accuracy</th><th>Completeness</th><th>Overall</th></tr></thead>
+              <tbody>
+                <tr><td>VGGT (point head)</td><td>0.0089</td><td>0.0113</td><td>0.0101</td></tr>
+                <tr><td>VGGT (depth + camera)</td><td class="best">0.0038</td><td>0.0058</td><td>0.0048</td></tr>
+                <tr><td>VGGT-Ω</td><td>0.0052</td><td class="best">0.0043</td><td class="best">0.0047</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project reveal">
+      <div class="project-head">
+        <p class="meta mono">BSc Thesis · Sep – Nov 2025 · CYENS Visual Computing Group</p>
+        <h3>Situation-Aware Multimodal Understanding in 3D Indoor Scenes</h3>
+        <p class="supervisors">Supervised by Prof. Yiorgos Chrysanthou, Dr. Melinos Averkiou and Dr. Marios Loizou</p>
+      </div>
+
+      <div class="project-body">
+        <div class="project-text">
+          <p><em>"I'm sitting on the chair. How many chairs are at my 10 o'clock?"</em> Answering this needs a model that understands the scene, the user's position in it, and the question. I extended <strong>MSR3D</strong>, a multimodal situated-reasoning model, to capture richer scene context.</p>
+          <ul class="ticks">
+            <li>Replaced the per-object <strong>PointNet++</strong> encoder with a <strong>Point Transformer V3</strong> scene encoder, so attention can model long-range context and spatial relations between objects.</li>
+            <li>Designed object-level feature aggregation over the full scene encoding, using instance-based mean pooling to produce scene-aware object embeddings.</li>
+            <li>Trained and evaluated in single- and multi-dataset settings on the <strong>MSQA</strong> benchmark (234k QA pairs) across ScanNet, 3RScan and ARKitScenes. In the single-dataset setting, counting accuracy rose from 0.31 to 0.41.</li>
+            <li>Built an interactive 3D scene viewer with RGB, instance, semantic and normal colour modes, bounding boxes, object search and live multimodal inference.</li>
+          </ul>
+          <div class="tags"><span>3D VQA</span><span>Point Transformer V3</span><span>LLMs</span><span>BLIP-2</span><span>PyTorch</span></div>
+        </div>
+
+        <div class="project-visual">
+          <figure class="frame zoomable">
+            <img src="assets/img/qualitative.webp" alt="Qualitative result: the PTv3 model correctly answers a counting question about chairs while PointNet++ answers incorrectly" loading="lazy">
+            <figcaption class="mono">Qualitative result: PTv3 answers correctly ("three"); the PointNet++ baseline does not.</figcaption>
+          </figure>
+          <div class="trio">
+            <figure class="frame zoomable"><img src="assets/img/scene-rgb.webp" alt="Scene in RGB colour mode" loading="lazy"><figcaption class="mono">RGB</figcaption></figure>
+            <figure class="frame zoomable"><img src="assets/img/scene-instance.webp" alt="Scene in instance colour mode" loading="lazy"><figcaption class="mono">Instance</figcaption></figure>
+            <figure class="frame zoomable"><img src="assets/img/scene-semantic.webp" alt="Scene in semantic colour mode" loading="lazy"><figcaption class="mono">Semantic</figcaption></figure>
+          </div>
+          <figure class="frame zoomable">
+            <img src="assets/img/scene-search.webp" alt="Interactive viewer highlighting searched objects in a 3D scene" loading="lazy">
+            <figcaption class="mono">Interactive viewer: object search and highlighting.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- Talk -->
+    <article class="talk reveal">
+      <p class="meta mono">Talk · Research presentation</p>
+      <h3>Visual Geometry Grounded Transformer: from SfM to feed-forward reconstruction</h3>
+      <p>A technical walkthrough of how 3D reconstruction moved from incremental Structure-from-Motion and Multi-View Stereo (COLMAP), through learned pipelines such as VGGSfM, to VGGT's unified transformer with its camera, depth, point and tracking heads.</p>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <h2 class="section-label reveal"><span class="num">03</span> Experience</h2>
+    <ol class="timeline">
+      <li class="reveal">
+        <div class="t-when mono">Summer 2026</div>
+        <div class="t-what">
+          <h3>Research Intern <span>· CYENS Centre of Excellence</span></h3>
+          <p class="t-sub">Visual Computing Group · Image-based 3D reconstruction of building models</p>
+          <p>Applied VGGT and VGGT-Ω to building reconstruction; built the BuildingNet rendering pipeline; aligned and evaluated predictions.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <div class="t-when mono">Sep – Nov 2025</div>
+        <div class="t-what">
+          <h3>Research Intern <span>· CYENS Centre of Excellence</span></h3>
+          <p class="t-sub">Visual Computing Group · Situation-aware multimodal understanding in 3D scenes</p>
+          <p>Extended MSR3D with a Point Transformer V3 scene encoder; trained on MSQA; built an interactive 3D scene viewer.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <div class="t-when mono">Summer 2025</div>
+        <div class="t-what">
+          <h3>IT Audit Intern <span>· PwC Cyprus</span></h3>
+          <p class="t-sub">Risk Assurance Services</p>
+          <p>IT audit engagements; studied the EU Digital Operational Resilience Act (DORA); took part in client meetings and prepared client reports.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <div class="t-when mono">Summer 2024</div>
+        <div class="t-what">
+          <h3>Research Intern (UROP) <span>· KIOS Center of Excellence</span></h3>
+          <p class="t-sub">EU Horizon COCOON project</p>
+          <p>Analysed botnet honeypot data for the project's Cyber Threat Intelligence platform and built a user-centred UI to explore and visualise attack statistics.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <div class="t-when mono">Summer 2024</div>
+        <div class="t-what">
+          <h3>IT Audit Intern <span>· PwC Cyprus</span></h3>
+          <p class="t-sub">Risk Assurance Services</p>
+          <p>Studied the NIST framework and its use in IT auditing; built a working knowledge of IT controls and audit methodology.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="wrap">
+    <h2 class="section-label reveal"><span class="num">04</span> Education</h2>
+    <div class="edu-grid">
+      <div class="card reveal">
+        <p class="meta mono">Sep 2026 – Present · London, UK</p>
+        <h3>University College London</h3>
+        <p>MSc Computer Graphics, Vision and Imaging</p>
+      </div>
+      <div class="card reveal">
+        <p class="meta mono">Sep 2022 – Jun 2026 · Nicosia, Cyprus</p>
+        <h3>University of Cyprus</h3>
+        <p>BSc Computer Science · GPA 9.46/10 · ranked 2nd in class</p>
+        <p class="muted">Thesis: Situation-Aware Multimodal Understanding in 3D Indoor Scenes</p>
+      </div>
+    </div>
+    <div class="coursework reveal">
+      <span class="mono">Relevant coursework</span>
+      <div class="tags">
+        <span>Machine Learning</span><span>Computer Vision</span><span>Computer Graphics</span><span>Image Processing</span><span>Game Development</span><span>Parallel Processing</span><span>Software Development</span><span>Computer Architecture</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS + AWARDS -->
+<section class="section" id="skills">
+  <div class="wrap two-col">
+    <div class="reveal">
+      <h2 class="section-label"><span class="num">05</span> Skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Python, C, C++, C#, Java, JavaScript, SQL, HTML/CSS</dd></div>
+        <div><dt>ML &amp; Vision</dt><dd>PyTorch, 3D point clouds, multi-view geometry</dd></div>
+        <div><dt>Tools</dt><dd>Linux, Git/GitHub, Docker, Django, Blender, Unity, VS Code, PyCharm</dd></div>
+        <div><dt>Spoken</dt><dd>Greek (native), English (fluent; IGCSE, IELTS), French (DELF A2)</dd></div>
+      </dl>
+    </div>
+    <div class="reveal">
+      <h2 class="section-label"><span class="num">06</span> Honours</h2>
+      <ul class="awards">
+        <li><span class="mono">2026</span><p>Ranked 2nd in graduating class, BSc Computer Science, University of Cyprus</p></li>
+        <li><span class="mono">2021</span><p>Top 5 nationally in the Pancyprian Examinations; 1st in Computer Science</p></li>
+        <li><span class="mono">2019</span><p>Award, Pancyprian Mathematics Competition (Cyprus Mathematical Society)</p></li>
+        <li><span class="mono">2021–22</span><p>Military service: radio operator, armoured unit, Cyprus National Guard</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <h2 class="section-label reveal"><span class="num">07</span> Contact</h2>
+    <p class="contact-big reveal">Open to research collaborations and opportunities in <em>3D vision &amp; graphics</em>.</p>
+    <div class="hero-cta reveal">
+      <a href="mailto:dempan4@gmail.com" class="btn">dempan4@gmail.com</a>
+      <a href="https://www.linkedin.com/in/panayiotis-demetriou" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/PanagiotisDemetriou" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner mono">
+    <span>© <span id="year">2026</span> Panayiotis Demetriou</span>
+    <span>London · Cyprus</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden><img alt=""><button aria-label="Close">×</button></div>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
